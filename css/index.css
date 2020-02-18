@@ -1,3 +1,292 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* Your code starts here! */
+* {
+    border: 2px solid grey;
+}
+body{
+    margin: 0% 15%;
+    background-color: white;
+}
+header{
+ 
+    display: flex;
+    flex-direction:row;
+    width: 70%;
+    background-color: white;
+    top: 0;
+}
+header nav{
+    width: 75%;
+    text-align: center;
+    align-items: center;
+    top: 30%;
+}
+
+
+header a{
+    width: 20%;
+    margin: 5% 4%;
+    color: grey;
+    text-decoration: none;
+}
+header a:hover{
+    color: black;
+}
+
+#started{
+    padding: 4% 3%;
+    margin: 6% 0px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10%;
+}
+#started img{
+    position: absolute;
+    bottom: -6%;
+    left: 55%;
+}
+.text{
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    right: 23%;
+    margin-top: 60px;
+}
+  button{
+    width: 13%;
+    padding: 1% 0px;
+    color: black;
+    background-color: white;
+    left: 43%;
+}
+ button:hover{
+    color: white;
+    background-color: grey;
+}
+.content{
+    display: flex;
+    position: relative;
+}
+.top-content {
+    border-top: 1px solid black;
+}
+.box1, .box2{
+    width: 48%;
+    display: inline-block;
+    margin: 4% 7px;
+}
+.box3, .box4, .box5{
+    width: 32%;
+    display: inline-block;
+    margin: 4% 4px;
+}
+.middle-img {
+    width: 100%;
+}
+footer{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 3% 0;
+    line-height: 2;
+    margin-top: 3%;
+    text-align: center;
+}
+address{
+    margin-top: 10px;
+	border-top: 1px solid black;
+	position: relative;
+	margin-bottom:0;
+
+}
+address h4 {
+    margin-top:30px;
+}
+address p {
+	margin: 20px 0;
+
+}
+
+@media(max-width: 800px) {
+
+    
+    header nav {
+        display:flex;
+        flex-direction:row;
+        width:100%;
+      padding-top: 20px;
+
+    }
+   header img {
+    justify-content: center;
+    margin: 0 0 50px;
+    align-self: center;
+   }
+ .text {
+     
+        width: 150%;
+        padding: 10px;
+        align-self: center;
+        align-content: center;
+        margin-top: 60px;
+
+    }
+    #started img{
+        display:none;
+        }
+    
+        button{
+            width: 23%;
+            padding: 1% 0px;
+            color: black;
+            background-color: white;
+            left: 38%;
+        }
+
+        .box1, .box2{
+    width: 40%;
+    display: inline-block;
+    margin: 10% 25px;
+}
+.box3, .box4, .box5{
+    width: 28%;
+    display: inline-block;
+    margin: 4% 10px;
+}
+}
+    
+  
+
+@media(max-width: 500px) {
+    
+ 
+    .container {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+
+    header {
+        display:flex;
+        flex-direction:column-reverse;
+        width: 100%;
+        padding: 0;
+        align-items:center;
+    }
+     
+    header nav {
+        display:flex;
+        flex-direction:column;
+        widows: 100%;
+        padding:0;
+        margin:0;
+     
+    }
+
+  
+  header a {
+            border-bottom: 1px solid gray;
+            width: 80%;
+            padding: 10px 0;
+            text-align: center;
+        
+    }
+    header img{
+        border-bottom: 1px solid gray;
+        width: 50%;
+           
+         
+    }
+
+
+
+    #started .text {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        
+    }
+    button{
+        width: 30%;
+         padding:0px;
+        color: black;
+        background-color: white;
+        display: inline-block;
+        align-self: center;
+        text-align: center;
+        line-height: 20px;
+        
+    }
+    #started img{
+    display:none;
+    }
+
+    .box1, .box2, .box3, .box4, .box5 {
+        display:flex;
+        flex-direction: column;
+        width: 80%;
+    }
+  
+}
